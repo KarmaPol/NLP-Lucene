@@ -1,8 +1,17 @@
 
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‚ûØÁÿ1J$4ed64730-c0b6-467f-ae59-71c42243a1c3
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÂâÅ£8…ûØÁÿ1J$93abc492-3fd3-4c1c-984a-31b80fe5c0d0
-œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘ñŞÑ8’ûØÁÿ1J$f992dc64-2caa-45a1-b669-1091993be570
+	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‚ûØÁÿ1J$ef1fd618-f475-4cc0-ae02-52accaf53410
+
+java:S1488)"bImmediately return this expression instead of assigning it to the temporary variable "fuzzyQuery".(şÌŠƒ8óîÂÿ1
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÂâÅ£8…ûØÁÿ1J$c9dd99f1-7cd8-4755-8819-2f1aceeb02c0
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘ñŞÑ8’ûØÁÿ1J$f22970b6-40ac-4969-a610-016f6db883d9
+«
+java:S1130'"Remove the declaration of thrown exception 'org.apache.lucene.queryparser.classic.ParseException', as it cannot be thrown from method's body.(½“£Î8ŸîÂÿ1
+]	java:S125+"<This block of commented-out lines of code should be removed.(Û¸³”ÿÿÿÿÿ8ƒŸîÂÿ1
 t
-java:S1874>"2Remove this use of "withHeader"; it is deprecated.(ÛÄÔf8 àÁÿ1J$28a1fd25-1fd8-43ba-a813-8f352bf79ade
+java:S1874E"2Remove this use of "withHeader"; it is deprecated.(ÛÄÔf8 àÁÿ1J$31691149-5960-4be7-a370-1edef605a628
+v
+java:S1128".Remove this unused import 'java.util.TreeMap'.(¨éˆèıÿÿÿÿ8ÇıèÂÿ1J$8a6553c8-6b38-4530-8523-2d77bb04b7be
 ”
-java:S1128"QRemove this unused import 'org.apache.lucene.analysis.standard.StandardAnalyzer'.(­‡ä¨8šûØÁÿ1J$f8aa8a52-14e8-48b7-b569-711ac0acd496
+java:S1128"QRemove this unused import 'org.apache.lucene.analysis.standard.StandardAnalyzer'.(­‡ä¨8ÈıèÂÿ1J$387bf864-4c03-4284-896e-224ac078c550
+F
+java:S1068"*Remove this unused "parser" private field.(ÀÅà58‡ŸîÂÿ1

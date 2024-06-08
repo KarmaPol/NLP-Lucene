@@ -5,14 +5,17 @@ import java.io.IOException;
 import java.io.Reader;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.TreeMap;
 
 import org.apache.commons.csv.CSVFormat;
 import org.apache.commons.csv.CSVParser;
 import org.apache.commons.csv.CSVRecord;
 import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.analysis.synonym.SynonymMap;
+import org.apache.lucene.index.Term;
 import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.queryparser.classic.QueryParser;
+import org.apache.lucene.search.FuzzyQuery;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.util.CharsRef;
 
@@ -34,7 +37,11 @@ public class QueryParserUtil {
 
     // 입력받은 문장을 하나의 검색어로 파싱
     public Query parseQuery(String userInput) throws ParseException {
-        return parser.parse(userInput);
+
+        FuzzyQuery fuzzyQuery = new FuzzyQuery(new Term("text", userInput), 1);
+
+        // return parser.parse(userInput);
+        return fuzzyQuery;
     }
 
     public static SynonymAnalyzer getSynonymAnalyzer() throws IOException {

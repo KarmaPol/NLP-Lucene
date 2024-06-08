@@ -25,7 +25,7 @@ public class SearchEngineTest {
 
     @Test
     void testSearch() throws IOException, ParseException {
-        String userInput = "hey"; // 검색할 쿼리 입력
+        String userInput = "sorry"; // 검색할 쿼리 입력
 
         // 실제 데이터를 사용하여 검색 실행
         List<SearchResponse> actualResponses = searchEngine.search(userInput);

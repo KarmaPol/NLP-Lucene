@@ -31,3 +31,5 @@ _
 .src/main/java/queryParser/QueryParserUtil.java,1/1/11603aaac37c80bae4553fe7feb27c3ba181490a
 ;
 synonym.csv,d/7/d793a74f26b3056216fcab374d6f80339a687eda
+V
+&src/test/java/QueryParserUtilTest.java,6/8/6890e95d6dd969a8d6c4f105ee926e1a6455e1ea
