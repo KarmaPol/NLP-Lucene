@@ -38,10 +38,10 @@ public class QueryParserUtil {
     // 입력받은 문장을 하나의 검색어로 파싱
     public Query parseQuery(String userInput) throws ParseException {
 
-        FuzzyQuery fuzzyQuery = new FuzzyQuery(new Term("text", userInput), 1);
+        // FuzzyQuery fuzzyQuery = new FuzzyQuery(new Term("text", userInput), 1);
+        // return fuzzyQuery;
 
-        // return parser.parse(userInput);
-        return fuzzyQuery;
+        return parser.parse(userInput);
     }
 
     public static SynonymAnalyzer getSynonymAnalyzer() throws IOException {
