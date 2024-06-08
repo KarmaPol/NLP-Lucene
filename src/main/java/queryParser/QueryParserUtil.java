@@ -75,6 +75,6 @@ public class QueryParserUtil {
     }
 
     private record SynonymTokens(String token1,
-                                        String token2) {
+                                 String token2) {
     }
 }
