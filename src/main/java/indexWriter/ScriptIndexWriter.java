@@ -16,9 +16,13 @@ import org.apache.lucene.store.FSDirectory;
 
 public class ScriptIndexWriter {
 	private static final MovieRepository movieRepository = new MovieRepository();
+
 	public static void main(String[] args) throws IOException {
 		List<MovieScript> movieScripts = movieRepository.getMovieScripts();
+		writeIndexes(movieScripts);
+	}
 
+	private static void writeIndexes(List<MovieScript> movieScripts) throws IOException {
 		File scriptsIndex = new File("scripts.index");
 		FSDirectory dir = FSDirectory.open(Paths.get(scriptsIndex.toURI()));
 		IndexWriterConfig config = new IndexWriterConfig(new StandardAnalyzer());
