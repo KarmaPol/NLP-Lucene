@@ -8,7 +8,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MovieRepository {
-	private final String GET_MOVIE_SCRIPTS_SQL = "SELECT * FROM script;";
+	private final String CONNECTION_URL = "jdbc:sqlite:movie.db";
+	private final String GET_MOVIE_SCRIPTS_SQL = "SELECT * FROM script A JOIN metadata B ON A.movie_id=B.id";
 
 	public List<MovieScript> getMovieScripts() {
 		Connection connection = null;
@@ -19,17 +20,21 @@ public class MovieRepository {
 
 		try {
 			Class.forName("org.sqlite.JDBC");
-			connection = DriverManager.getConnection("jdbc:sqlite:scripts.sqlite");
+			connection = DriverManager.getConnection(CONNECTION_URL);
 			statement = connection.createStatement();
 
 			resultSet = statement.executeQuery(GET_MOVIE_SCRIPTS_SQL);
 
 			while (resultSet.next()) {
-				MovieScript movieScript = new MovieScript(resultSet.getLong(1),
+				MovieScript movieScript = new MovieScript(
+					resultSet.getLong(1),
 					resultSet.getLong(2),
-					resultSet.getString(3),
+					resultSet.getString(5),
 					resultSet.getString(4),
-					resultSet.getInt(5));
+					resultSet.getInt(3),
+					resultSet.getString(7),
+					resultSet.getString(8)
+					);
 
 				movieScripts.add(movieScript);
 			}
