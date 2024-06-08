@@ -1,5 +1,8 @@
 
-	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8Š¼Àÿ1J$96445f9c-8c49-43c6-b42b-ee8ed0dd50ca
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÂâÅ£8ˆ›¸Àÿ1J$fe2725c2-930c-4b0b-82eb-4594eaf17a6e
+	java:S112"FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‚ûØÁÿ1J$f942c9a5-164d-4acc-8582-a619daefccde
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÂâÅ£8…ûØÁÿ1J$dad0c5f4-2711-4f68-b130-53e0689f9f40
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘ñŞÑ8’ûØÁÿ1J$81ee7ecf-8e06-4b2e-ac92-75dd0030f785
+t
+java:S1874>"2Remove this use of "withHeader"; it is deprecated.(ÛÄÔf8 àÁÿ1J$0ebd5760-2ac9-453d-b1b3-196bb34c71e0
 ”
-java:S1128"QRemove this unused import 'org.apache.lucene.analysis.standard.StandardAnalyzer'.(­‡ä¨8³ÅÔÀÿ1J$dd0f0aaa-ccf5-4514-8ef2-12d2e4691530
+java:S1128"QRemove this unused import 'org.apache.lucene.analysis.standard.StandardAnalyzer'.(­‡ä¨8šûØÁÿ1J$761de5d3-7ca4-4a45-a324-84984226330c

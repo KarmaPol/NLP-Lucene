@@ -29,3 +29,5 @@ _
 /src/main/java/searchEngine/SynonymAnalyzer.java,0/0/00b30c753799262b9be1601ae72a06025cca28f2
 ^
 .src/main/java/queryParser/QueryParserUtil.java,1/1/11603aaac37c80bae4553fe7feb27c3ba181490a
+;
+synonym.csv,d/7/d793a74f26b3056216fcab374d6f80339a687eda
