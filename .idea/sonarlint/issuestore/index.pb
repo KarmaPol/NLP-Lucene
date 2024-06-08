@@ -25,3 +25,7 @@ S
 #src/test/java/SearchEngineTest.java,7/4/740e620a4a4c80b0ef257b67ec128b51298b8957
 ^
 .src/main/java/searchEngine/SearchResponse.java,e/2/e2df19132c815a803dfe66d97743741d010d34fd
+_
+/src/main/java/searchEngine/SynonymAnalyzer.java,0/0/00b30c753799262b9be1601ae72a06025cca28f2
+^
+.src/main/java/queryParser/QueryParserUtil.java,1/1/11603aaac37c80bae4553fe7feb27c3ba181490a
