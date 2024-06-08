@@ -1,72 +1,46 @@
 import org.apache.lucene.queryparser.classic.ParseException;
-import org.apache.lucene.search.Query;
-import org.apache.lucene.search.TopDocs;
+import org.apache.lucene.store.Directory;
+import org.apache.lucene.store.FSDirectory;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
-import org.mockito.junit.jupiter.MockitoExtension;
-
-import queryParser.QueryParserUtil;
 import searchEngine.SearchEngine;
 import searchEngine.SearchResponse;
 
 import java.io.IOException;
+import java.nio.file.Paths;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.when;
 
-@ExtendWith(MockitoExtension.class)
 public class SearchEngineTest {
 
     private SearchEngine searchEngine;
-    private QueryParserUtil queryParserUtil;
 
     @BeforeEach
-    void setUp() {
-        try {
-            // SearchEngine 생성자 호출
-            searchEngine = new SearchEngine("/path/to/indexDir");
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        // Mock QueryParserUtil 객체 생성
-        queryParserUtil = mock(QueryParserUtil.class);
-        // SearchEngine에 Mock QueryParserUtil 설정
-        searchEngine.setQueryParserUtil(queryParserUtil);
+    void setUp() throws IOException {
+        String indexDir = "scripts.index"; // 실제 인덱스 경로로 변경
+        Directory directory = FSDirectory.open(Paths.get(indexDir));
+        searchEngine = new SearchEngine(indexDir);
     }
 
     @Test
     void testSearch() throws IOException, ParseException {
-        // 가짜 쿼리 생성
-        String userInput = "test query";
-        Query fakeQuery = mock(Query.class);
-        // 가짜 쿼리 결과 생성
-        TopDocs fakeResult = mock(TopDocs.class);
-        // SearchEngine이 반환할 가짜 검색 결과 설정
-        when(searchEngine.searcher.search(fakeQuery, 10)).thenReturn(fakeResult);
-        // 가짜 검색 결과 생성
-        List<SearchResponse> fakeResponses = List.of(
-                new SearchResponse("text1", "character1", "name1", 1),
-                new SearchResponse("text2", "character2", "name2", 2)
-        );
-        // 가짜 검색 결과 반환 설정
-        when(searchEngine.searcher.search(fakeQuery, 10)).thenReturn(fakeResult);
-        // 가짜 검색 결과에서 가짜 응답 생성
-        // ...
-        // 실제 검색 수행
+        String userInput = "leave"; // 검색할 쿼리 입력
+
+        // 실제 데이터를 사용하여 검색 실행
         List<SearchResponse> actualResponses = searchEngine.search(userInput);
-        // 결과 검증
-        assertEquals(fakeResponses.size(), actualResponses.size());
-        // 각 응답의 필드 비교
-        for (int i = 0; i < fakeResponses.size(); i++) {
-            SearchResponse expected = fakeResponses.get(i);
-            SearchResponse actual = actualResponses.get(i);
-            assertEquals(expected.text(), actual.text());
-            assertEquals(expected.character(), actual.character());
-            assertEquals(expected.name(), actual.name());
-            assertEquals(expected.scriptIndex(), actual.scriptIndex());
+
+        // 검색 결과 확인
+        for (SearchResponse response : actualResponses) {
+            System.out.println("Text: " + response.text());
+            System.out.println("Character: " + response.character());
+            System.out.println("Movie Name: " + response.movieName());
+            System.out.println("Movie Author: " + response.movieAuthor());
+            System.out.println("Index: " + response.scriptIndex());
         }
+
+        // 검색 결과를 기반으로 한 검증
+        int expectedSize = 2;
+        assertEquals(expectedSize, actualResponses.size());
     }
 }

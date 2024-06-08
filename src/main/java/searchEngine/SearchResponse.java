@@ -4,7 +4,8 @@ public record SearchResponse(
 
         String text,
         String character,
-        String name,
+        String movieName,
+        String movieAuthor,
         Integer scriptIndex
 ) {
 }

@@ -17,22 +17,35 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SearchEngine {
-    public IndexSearcher searcher;
+    private IndexSearcher searcher;
     private QueryParserUtil queryParserUtil;
 
     public SearchEngine(String indexDir) throws IOException {
-        // 주어진 경로로부터 루씬 인덱스 open
         Directory indexDirectory = FSDirectory.open(Paths.get(indexDir));
         DirectoryReader reader = DirectoryReader.open(indexDirectory);
         this.searcher = new IndexSearcher(reader);
         this.queryParserUtil = new QueryParserUtil();
     }
 
-    // 검색 메소드
-    public List<SearchResponse> search(String userInput) throws IOException, ParseException {
-        return null;
+    // QueryParserUtil setter 메서드 추가
+    public void setQueryParserUtil(QueryParserUtil queryParserUtil) {
+        this.queryParserUtil = queryParserUtil;
     }
 
-    public void setQueryParserUtil(QueryParserUtil queryParserUtil) {
+    public List<SearchResponse> search(String userInput) throws IOException, ParseException {
+        Query query = queryParserUtil.parseQuery(userInput);
+        TopDocs result = searcher.search(query, 10);
+        List<SearchResponse> searchResponses = new ArrayList<>();
+        for (ScoreDoc scoreDoc : result.scoreDocs) {
+            Document document = searcher.doc(scoreDoc.doc);
+            searchResponses.add(new SearchResponse(
+                    document.get("text"),
+                    document.get("character"),
+                    document.get("movieName"),
+                    document.get("movieAuthor"),
+                    Integer.parseInt(document.get("index"))
+            ));
+        }
+        return searchResponses;
     }
 }
