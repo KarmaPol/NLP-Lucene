@@ -3,18 +3,12 @@
 build.gradle,f/0/f07866736216be0ee2aba49e392191aeae700a35
 Q
 !src/main/java/searchExecutor.java,a/f/af7b814e010d79cda8515309fe1e9b630dc47d19
-Z
-*src/main/java/indexWriter/IndexWriter.java,0/c/0c2578b2ab0a30d6fdb8f3451186a9e706a3002d
-Z
-*src/main/java/queryParser/QueryParser.java,f/a/fa4d5e84c53ff5b8decfee5238c513dce0b9a615
 \
 ,src/main/java/searchEngine/SearchEngine.java,1/5/156081f925ce5df6bf5b32974b7cccb64091d509
 Q
 !src/main/java/SearchExecutor.java,1/b/1bb80c517843779adc40e9b41e6a4b54c78c419a
 ^
 .src/main/java/indexWriter/MovieRepository.java,2/6/26b58a7788f0999347ef37060780d875633c4ec4
-U
-%src/main/java/indexWriter/Script.java,0/7/0717cb6502f0dc3a59c9c9e3c050b896e529d4bc
 Z
 *src/main/java/indexWriter/MovieScript.java,2/4/2497199a345a43944444d4deb3d46f2d89918f1b
 >
@@ -35,3 +29,5 @@ V
 &src/test/java/QueryParserUtilTest.java,6/8/6890e95d6dd969a8d6c4f105ee926e1a6455e1ea
 ?
 settings.gradle,0/5/05efc8b1657769a27696d478ded1e95f38737233
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d

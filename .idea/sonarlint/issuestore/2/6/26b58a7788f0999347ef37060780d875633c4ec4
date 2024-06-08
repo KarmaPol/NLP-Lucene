@@ -1,12 +1,12 @@
 
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºõã¼8ñİçÃÿ1J$237448ae-d9b6-49a8-8e78-b80ef8928f61
-i
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‡²€·ıÿÿÿÿ8¿§…Äÿ1
-j
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(¬Üù½úÿÿÿÿ8¿§…Äÿ1
-›	java:S116"YRename this field "CONNECTION_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç«Ú8ãŞçÃÿ1J$9dc02e17-7434-4378-9d13-d1ae2162422f
-¢	java:S116"`Rename this field "GET_MOVIE_SCRIPTS_SQL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò³«Ä8ãŞçÃÿ1J$ffe4fd2d-2cf0-4a39-9bfa-3b4a59b86856
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºõã¼8ñİçÃÿ1J$656be27c-e84b-4f96-832b-b37a4548feba
+
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‡²€·ıÿÿÿÿ8¿§…Äÿ1J$fdcbdfdb-8cc7-4a4c-8b13-6efaaaaec55d
+
+java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(¬Üù½úÿÿÿÿ8¿§…Äÿ1J$20cd20d6-755a-494f-a27c-bd67fbd920a7
+›	java:S116"YRename this field "CONNECTION_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç«Ú8ãŞçÃÿ1J$e25fd291-b831-4b4a-954b-ddf3cf2b6e3f
+¢	java:S116"`Rename this field "GET_MOVIE_SCRIPTS_SQL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò³«Ä8ãŞçÃÿ1J$282e019c-1415-4d62-9636-461ffbac4eda
 d
-java:S1170"!Make this final field static too.(ç«Ú8ãŞçÃÿ1J$af735305-5bb9-4a13-9d78-43b550cf15df
+java:S1170"!Make this final field static too.(ç«Ú8ãŞçÃÿ1J$ff925e69-8a67-498b-91b7-af4ac34b85cd
 d
-java:S1170"!Make this final field static too.(ò³«Ä8ãŞçÃÿ1J$bc32b106-8aca-4650-ba38-c5a8c8e17213
+java:S1170"!Make this final field static too.(ò³«Ä8ãŞçÃÿ1J$ca8f19c4-313a-4a67-8d0c-fb6a35e6fe19
