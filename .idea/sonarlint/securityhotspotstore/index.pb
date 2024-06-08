@@ -19,3 +19,5 @@ Z
 *src/main/java/indexWriter/MovieScript.java,2/4/2497199a345a43944444d4deb3d46f2d89918f1b
 >
 scripts.sqlite,5/d/5dbbeb0b1ab7acec0cb273f6af7e2fb7340577d2
+`
+0src/main/java/indexWriter/ScriptIndexWriter.java,e/5/e5edd4fc835c14ac23ba30154c66473b43bf08cf

@@ -1,12 +1,2 @@
 
-v	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºõã¼8ÑÆ˜µÿ1
-H
-java:S1068"&Remove this unused "id" private field.(şÓî«şÿÿÿÿ8õÆ˜µÿ1
-H
-java:S1068"+Remove this unused "movieId" private field.(Ã¥›­8õÆ˜µÿ1
-E
-java:S1068"(Remove this unused "text" private field.(š²ûÁ8õÆ˜µÿ1
-J
-java:S1068"-Remove this unused "character" private field.(îßÇ®8õÆ˜µÿ1
-K
-java:S1068")Remove this unused "index" private field.(íä¾Üúÿÿÿÿ8õÆ˜µÿ1
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºõã¼8—¶·ÿ1J$6c2e8f5e-5627-4e60-836d-07b60d5cf6e3
