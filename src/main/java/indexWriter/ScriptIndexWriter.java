@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.List;
 
-import org.apache.lucene.analysis.standard.StandardAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.document.Field;
 import org.apache.lucene.document.StringField;
@@ -14,14 +13,20 @@ import org.apache.lucene.index.IndexWriter;
 import org.apache.lucene.index.IndexWriterConfig;
 import org.apache.lucene.store.FSDirectory;
 
+import queryParser.QueryParserUtil;
+
 public class ScriptIndexWriter {
 	private static final MovieRepository movieRepository = new MovieRepository();
+
 	public static void main(String[] args) throws IOException {
 		List<MovieScript> movieScripts = movieRepository.getMovieScripts();
+		writeIndexes(movieScripts);
+	}
 
+	private static void writeIndexes(List<MovieScript> movieScripts) throws IOException {
 		File scriptsIndex = new File("scripts.index");
 		FSDirectory dir = FSDirectory.open(Paths.get(scriptsIndex.toURI()));
-		IndexWriterConfig config = new IndexWriterConfig(new StandardAnalyzer());
+		IndexWriterConfig config = new IndexWriterConfig(QueryParserUtil.getSynonymAnalyzer());
 		IndexWriter writer = new IndexWriter(dir, config);
 		writer.deleteAll();
 
