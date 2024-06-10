@@ -1,9 +1,0 @@
-
-œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºõã¼8š°âµÿ1J$1c60a829-3782-4d82-82bc-8456c8852d41
-i
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‡²€·ýÿÿÿÿ8ÿ¾ãµÿ1
-e
-java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(ºõÛÏ8ÿ¾ãµÿ1
-¢	java:S116"`Rename this field "GET_MOVIE_SCRIPTS_SQL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ä “Æ8ï±âµÿ1J$6ae62e71-00a3-4f9f-98ee-1b15ac6a1739
-d
-java:S1170"!Make this final field static too.(ä “Æ8ï±âµÿ1J$d3e9ed09-9c8d-44c5-83df-e67fdc8fadc7
