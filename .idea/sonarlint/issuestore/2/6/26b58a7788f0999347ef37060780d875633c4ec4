@@ -1,9 +1,9 @@
 
 œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ºõã¼8ñİçÃÿ1J$656be27c-e84b-4f96-832b-b37a4548feba
-
-java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‡²€·ıÿÿÿÿ8¿§…Äÿ1J$fdcbdfdb-8cc7-4a4c-8b13-6efaaaaec55d
 
 java:S2095"HUse try-with-resources or close this "Connection" in a "finally" clause.(¬Üù½úÿÿÿÿ8¿§…Äÿ1J$20cd20d6-755a-494f-a27c-bd67fbd920a7
+
+java:S2095"GUse try-with-resources or close this "Statement" in a "finally" clause.(‡²€·ıÿÿÿÿ8¿§…Äÿ1J$fdcbdfdb-8cc7-4a4c-8b13-6efaaaaec55d
 ›	java:S116"YRename this field "CONNECTION_URL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ç«Ú8ãŞçÃÿ1J$e25fd291-b831-4b4a-954b-ddf3cf2b6e3f
 ¢	java:S116"`Rename this field "GET_MOVIE_SCRIPTS_SQL" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò³«Ä8ãŞçÃÿ1J$282e019c-1415-4d62-9636-461ffbac4eda
 d

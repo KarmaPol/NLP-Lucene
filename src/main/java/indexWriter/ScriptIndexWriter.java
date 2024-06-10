@@ -38,6 +38,8 @@ public class ScriptIndexWriter {
 				doc.add(new TextField("text", movieScript.text(), Field.Store.YES));
 				doc.add(new StringField("character", movieScript.character(), Field.Store.YES));
 				doc.add(new StringField("index", movieScript.index().toString(), Field.Store.YES));
+				doc.add(new StringField("movieName", movieScript.movieName(), Field.Store.YES));
+				doc.add(new StringField("movieAuthor", movieScript.movieAuthor(), Field.Store.YES));
 
 				writer.addDocument(doc);
 			} catch (IOException e) {
