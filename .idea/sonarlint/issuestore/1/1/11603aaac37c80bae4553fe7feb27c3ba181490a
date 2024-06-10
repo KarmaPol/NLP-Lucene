@@ -1,0 +1,15 @@
+
+	java:S112""FDefine and throw a dedicated exception instead of using a generic one.(Ò‚Òéüÿÿÿÿ8‚ûØÁÿ1J$f98a0d6d-2dff-48f7-865d-e5433f1e27f1
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ÂâÅ£8…ûØÁÿ1J$0522280d-7075-4da3-a85e-93b6cfbb86f8
+œ	java:S115"ZRename this constant name to match the regular expression '^[A-Z][A-Z0-9]*(_[A-Z0-9]+)*$'.(‘ñŞÑ8’ûØÁÿ1J$db21b648-0963-45bc-8238-c8637d8bd608
+ƒ	java:S125)"<This block of commented-out lines of code should be removed.(ó¾ğ†ùÿÿÿÿ8‰ÑÔÃÿ1J$552f924e-0f8c-44fa-98b3-ec6714db09bd
+t
+java:S1874E"2Remove this use of "withHeader"; it is deprecated.(ÛÄÔf8 àÁÿ1J$571b0192-2e21-4f49-93f0-ef2f28f96da6
+v
+java:S1128".Remove this unused import 'java.util.TreeMap'.(¨éˆèıÿÿÿÿ8ÇıèÂÿ1J$4854128e-a4fd-44b4-99ff-90a1869080a3
+”
+java:S1128"QRemove this unused import 'org.apache.lucene.analysis.standard.StandardAnalyzer'.(­‡ä¨8ÈıèÂÿ1J$103af36d-36c3-4dd7-be98-fd26459c0d33
+
+java:S1128"9Remove this unused import 'org.apache.lucene.index.Term'.(«ˆîÏÿÿÿÿÿ8ÑÔÃÿ1J$eaca00d9-6d6c-4dbe-9125-4165d8592d21
+ˆ
+java:S1128"@Remove this unused import 'org.apache.lucene.search.FuzzyQuery'.(öş¯ÿÿÿÿÿ8ÑÔÃÿ1J$e41844a5-a8c7-4976-bba7-21af0a9bd49b

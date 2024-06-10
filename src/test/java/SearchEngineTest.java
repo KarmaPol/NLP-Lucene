@@ -25,7 +25,7 @@ public class SearchEngineTest {
 
     @Test
     void testSearch() throws IOException, ParseException {
-        String userInput = "leave"; // 검색할 쿼리 입력
+        String userInput = "What's going on, Adams?"; // 검색할 쿼리 입력
 
         // 실제 데이터를 사용하여 검색 실행
         List<SearchResponse> actualResponses = searchEngine.search(userInput);
@@ -40,7 +40,28 @@ public class SearchEngineTest {
         }
 
         // 검색 결과를 기반으로 한 검증
-        int expectedSize = 2;
+        int expectedSize = 10;
+        assertEquals(expectedSize, actualResponses.size());
+    }
+
+    @Test
+    void testSynonymSearch() throws IOException, ParseException {
+        String userInput = "Wat's going on, Adams?"; // 검색할 쿼리 입력
+
+        // 실제 데이터를 사용하여 검색 실행
+        List<SearchResponse> actualResponses = searchEngine.search(userInput);
+
+        // 검색 결과 확인
+        for (SearchResponse response : actualResponses) {
+            System.out.println("Text: " + response.text());
+            System.out.println("Character: " + response.character());
+            System.out.println("Movie Name: " + response.movieName());
+            System.out.println("Movie Author: " + response.movieAuthor());
+            System.out.println("Index: " + response.scriptIndex());
+        }
+
+        // 검색 결과를 기반으로 한 검증
+        int expectedSize = 10;
         assertEquals(expectedSize, actualResponses.size());
     }
 }
