@@ -1,0 +1,19 @@
+
+”
+java:S11924"QDefine a constant instead of duplicating this literal "Enter the dialog" 3 times.(šª‰8¸Ì¦”€2J$aaf1af2e-0099-448f-9b9a-712f74cfe6f6
+p
+java:S1604r"(Make this anonymous inner class a lambda(‚øéıÿÿÿÿ8¸Ì¦”€2J$52445a99-6102-4967-affd-acba9cdaeaa4
+k
+java:S1604}"(Make this anonymous inner class a lambda(ƒÍÆÖ8¸Ì¦”€2J$16970353-17bc-4d50-b238-cec50671965c
+Œ
+java:S3252!"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´8ĞÌ¦”€2J$9a592dba-0475-4164-9381-8e97599bdabf
+}
+java:S11616":Add the "@Override" annotation above this method signature(ñ—Ú–8ÒÌ¦”€2J$b1573900-963f-4c17-9ce0-8df525a3ade4
+}
+java:S1161<":Add the "@Override" annotation above this method signature(±“‚Æ8ÓÌ¦”€2J$3e6af13e-6a05-4e83-8e37-47c2b94d2397
+}
+java:S1854”"9Remove this useless assignment to local variable "actor".(õÇ“Ä8×Ì¦”€2J$14738eb9-b27b-4a5e-959c-405dbd0fedfe
+n
+java:S1481”"*Remove this unused "actor" local variable.(õÇ“Ä8ØÌ¦”€2J$0b97088c-6a6b-4993-8e62-31d5e3f1042f
+Œ
+java:S5361È"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ıĞÕ•8ÛÌ¦”€2J$6c707990-315d-4236-99b8-0dcfecb20774

@@ -1,5 +1,9 @@
 
-V
-java:S1220""Move this file to a named package.J$9dbf30d3-b52f-4a16-8b1e-f0a34ac38af9
-~
-java:S2094"BRemove this empty class, write its code or make it an "interface".(áûù¿J$75af48a3-dcca-4955-8b1b-679ec422edc5
+]
+java:S1220""Move this file to a named package.8ñ“«”€2J$025c3010-4525-440e-bb92-40e50c1b4081
+Œ
+java:S2095"IUse try-with-resources or close this "FSDirectory" in a "finally" clause.(Ì©òƒ8ô“«”€2J$3c96cf82-a291-46ff-baae-43d5444473a9
+€
+java:S1854"=Remove this useless assignment to local variable "directory".(Ì©òƒ8÷“«”€2J$c5ee154c-ce53-4a6d-942f-0812ddb57c1f
+q
+java:S1481".Remove this unused "directory" local variable.(Ì©òƒ8ø“«”€2J$bd96e863-16db-472b-a49f-2cb14e7035f2
