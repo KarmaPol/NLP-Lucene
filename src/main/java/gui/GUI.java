@@ -162,8 +162,8 @@ public class GUI {
             // Text panel
             JPanel textPanel = new JPanel();
             textPanel.setLayout(new BoxLayout(textPanel, BoxLayout.Y_AXIS));
-            JLabel indexAndDialogLabel = new JLabel("<html><b>" + index + "</b>: <b>" + dialog + "</b></html>");
-            JLabel movieTitleLabel = new JLabel("<html><font color='blue'><>" + movieTitle + "<></font></html>");
+            JLabel indexAndDialogLabel = new JLabel("<html>( " + index + " ) " + actor + " : " + dialog + "</html>");
+            JLabel movieTitleLabel = new JLabel("<html><font color='blue'>" + movieTitle + "</font></html>");
             JLabel writerLabel = new JLabel("<html>-<font color='gray'>" + writer + "</font></html>");
             textPanel.add(indexAndDialogLabel);
             textPanel.add(movieTitleLabel);
@@ -180,7 +180,11 @@ public class GUI {
                         ImageIcon icon = new ImageIcon(image);
                         posterLabel.setIcon(icon);
                     } else {
-                        posterLabel.setText("No Image Found");
+                        posterLabel.setText("<html><center>No<br>Poster</center></html>");
+                        posterLabel.setHorizontalAlignment(SwingConstants.CENTER);
+                        posterLabel.setVerticalAlignment(SwingConstants.CENTER);
+                        posterLabel.setForeground(Color.RED);
+                        posterLabel.setBorder(BorderFactory.createLineBorder(Color.BLACK));
                     }
                 } catch (IOException ex) {
                     ex.printStackTrace();
@@ -188,6 +192,14 @@ public class GUI {
             }).start();
 
             resultPanel.add(resultItemPanel);
+        }
+
+        // Add empty panels to fill the remaining space
+        int remainingItems = ITEMS_PER_PAGE - (endIndex - startIndex);
+        for (int i = 0; i < remainingItems; i++) {
+            JPanel emptyPanel = new JPanel();
+            emptyPanel.setPreferredSize(new Dimension(resultPanel.getWidth(), 150));
+            resultPanel.add(emptyPanel);
         }
 
         resultPanel.revalidate();
