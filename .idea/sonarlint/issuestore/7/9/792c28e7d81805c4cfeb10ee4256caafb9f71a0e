@@ -1,15 +1,16 @@
 
 ”
-java:S11924"QDefine a constant instead of duplicating this literal "Enter the dialog" 3 times.(šª‰8¸Ì¦”€2J$2ae2941b-8716-4bfe-942b-4e52d30a1e7b
+java:S11925"QDefine a constant instead of duplicating this literal "Enter the dialog" 3 times.(šª‰8ÿÒ˜€2J$ac64eb89-7632-4bab-9fff-da2bcd346e6d
 p
-java:S1604r"(Make this anonymous inner class a lambda(‚øéıÿÿÿÿ8¸Ì¦”€2J$a03c00d6-baf9-4124-a999-699aa3766941
-k
-java:S1604}"(Make this anonymous inner class a lambda(ƒÍÆÖ8¸Ì¦”€2J$3c46fd03-3cab-463f-afa7-540221360b9e
+java:S1604w"(Make this anonymous inner class a lambda(‚øéıÿÿÿÿ8€‘Ò˜€2J$bca6938e-6815-42da-a59d-bcbe3cb84cbe
+l
+java:S1604‚"(Make this anonymous inner class a lambda(ƒÍÆÖ8€‘Ò˜€2J$7b1834a1-5222-431c-b974-27e17274b975
 Œ
-java:S3252!"IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´8ĞÌ¦”€2J$60fbf3a0-c0aa-407c-b665-2fe497b8df23
+java:S3252""IUse static access with "javax.swing.WindowConstants" for "EXIT_ON_CLOSE".(¢¡´8›‘Ò˜€2J$01c24be0-f9de-4ecf-ba28-e0355164ec67
 }
-java:S11616":Add the "@Override" annotation above this method signature(ñ—Ú–8ÒÌ¦”€2J$e85b2dbc-fbf3-45e2-8c31-fd360d88c084
+java:S11617":Add the "@Override" annotation above this method signature(ñ—Ú–8‘Ò˜€2J$639a94e4-c315-47b4-9b40-1640f054e170
 }
-java:S1161<":Add the "@Override" annotation above this method signature(±“‚Æ8ÓÌ¦”€2J$f6df4037-e473-4e8a-831a-b0fe1daae128
-f
-java:S5361Ô"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ıĞÕ•8œ¯‡–€2
+java:S1161=":Add the "@Override" annotation above this method signature(±“‚Æ8‘Ò˜€2J$f2344d81-f743-4244-9ff0-f33174dbeab0
+m	java:S106o"+Replace this use of System.out by a logger.(„ˆ œ8 ‘Ò˜€2J$a557a0e9-5870-43b1-8c7c-e2320d319153
+Œ
+java:S5361Ù"HReplace this call to "replaceAll()" by a call to the "replace()" method.(ıĞÕ•8¦‘Ò˜€2J$fb2d8b13-4563-4f04-91aa-18012e7b7722

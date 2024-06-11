@@ -34,7 +34,7 @@ public class SearchEngine {
 
     public List<SearchResponse> search(String userInput) throws IOException, ParseException {
         Query query = queryParserUtil.parseQuery(userInput);
-        TopDocs result = searcher.search(query, 10);
+        TopDocs result = searcher.search(query, 15);
         List<SearchResponse> searchResponses = new ArrayList<>();
         for (ScoreDoc scoreDoc : result.scoreDocs) {
             Document document = searcher.doc(scoreDoc.doc);

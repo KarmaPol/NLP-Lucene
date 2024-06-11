@@ -21,6 +21,7 @@ public class GUI {
     private SearchEngine searchEngine;
     private List<SearchResponse> searchResponses;
     private String query;
+    private Long executionTime;
 
     public GUI(SearchEngine searchEngine) {
         this.searchEngine = searchEngine;
@@ -102,8 +103,12 @@ public class GUI {
                 currentPage = 0;
                 resultTitle.setText("Result");
                 query = textField.getText();
+                long startTime = System.currentTimeMillis();
                 searchResponses = searchEngine.search(query);
 
+                long endTime = System.currentTimeMillis();
+                executionTime = endTime - startTime;
+                System.out.println("Query: " + query + " | Execution Time: " + executionTime + "ms");
                 displayResults(resultPanel, currentPage);
                 prevButton.setVisible(searchResponses.size() > ITEMS_PER_PAGE);
                 nextButton.setVisible(searchResponses.size() > ITEMS_PER_PAGE);
